@@ -1,0 +1,117 @@
+.hkl{
+
+    position:relative;
+    width:200px;
+    height:52px;
+    border-radius:20px;
+    top:5px;
+    margin-left:10px;
+  }
+  
+  .hkl input{
+    position:relative;
+    appearance: none;
+    width:160px;
+    height: 50px;
+    border-radius: 20px;
+    margin-left:20px;
+    background:#D9D9D9 ;
+    outline:none;
+  }
+  .hkl input::before,
+  .hkl input::after{
+    z-index:2;
+    position:absolute;
+    top:56%;
+    transform:translateY(-60%);
+    font-weight:bolder;
+  }
+  
+  .hkl input::before{
+    content: "Yes";
+    left:30px;
+  }
+  
+  .hkl input::after{
+    content:"No";
+    right:30px;
+  }
+  
+  .hkl input:checked{
+    background:#D9D9D9;
+  }
+  
+  .hkl label{
+    z-index:1;
+    position:absolute;
+    top:4px;
+    bottom:0px;
+    
+    border-radius:20px;
+  }
+  
+  .hkl input{
+    transition:0.25s;
+  }
+  
+  .hkl input:checked::before{
+    color:#FFFFFF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;  
+    transition:color 0.5s;
+  }
+  
+  .hkl input:checked::after{
+    color:#000000;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;  
+    transition:color 0.5s 0.2s ;
+  }
+  
+  
+  .hkl input:checked+label{
+    left:20px;
+    right:100px;
+    background:#E13C71;
+    height:51px;
+    top:1px;
+    transition:left 0.5s,right 0.4s 0.2s;
+  }
+  
+  .hkl input:not(:checked){
+    background:#D9D9D9;
+    transition:background 0.4s;
+  }
+  
+  .hkl input:not(:checked)::before{
+    color:#000000;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;  
+    transition:color 0.5s;
+  }
+  .hkl input:not(:checked)::after{
+    color:#FFFFFF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;  
+    transition:color 0.5s 0.2s;
+  }
+  
+  .hkl input:not(:checked)+label {
+    left:90px;
+    right:20px;
+    background:#E13C71;
+    height:51px;
+    top:1px;
+    transition:left 0,4s 0,2s.right 0.5s,background 0.35s;
+  }
+  
+
+  

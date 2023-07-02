@@ -1,0 +1,39 @@
+.text1{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    color: #000000;
+    /* margin-left:-70px; */
+}
+
+
+
+@media only screen and  (min-width: 1200px) 
+{
+    .text1{
+        margin-left:-20px;
+        font-size: 21px;
+        font-weight:400;
+    }
+}
+@media only screen and (max-width: 1199px) and (min-width: 991px) 
+{
+    
+}
+@media only screen and (max-width: 990px) and (min-width: 768px) 
+{
+    .text1{
+        margin-left:2px;
+        font-size: 15px;
+        font-weight:800;
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 300px) 
+{
+    .text1{
+        margin-left:2px;
+        font-size: 15px;
+        font-weight:800;
+    }
+}
